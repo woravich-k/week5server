@@ -13,6 +13,6 @@ httpsServer.listen(4443);
 app.get('/',function(req,res){
 	//run some server side code
 	console.log('the server has recieved a request');
-	res.send('Hello World');
+	res.sendFile(__dirname +'/test.html');
 });
 
